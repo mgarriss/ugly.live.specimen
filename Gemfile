@@ -33,11 +33,16 @@ gem 'unicorn'
 group :test do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
-  gem "capybara"
-  gem "factory_girl"
 end
 
 group :test, :development do
   gem "rspec-rails", "~> 2.6"
+  gem "rb-fsevent", require:false if RUBY_PLATFORM =~ /darwin/i
+  gem "capybara"
+  gem "factory_girl"
+  gem "database_cleaner"
+  gem "launchy"
+  gem "guard-rspec"
+  gem "growl"
 end
 
