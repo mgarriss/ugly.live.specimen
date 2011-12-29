@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "home page" do
   it "diplays a list of selectable libraries if at least one exists" do
     library = Factory(:library, name:"ableton live samples",
