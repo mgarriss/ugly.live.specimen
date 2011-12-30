@@ -1,0 +1,21 @@
+%h1 Listing samples
+
+%table
+  %tr
+    %th Name
+    %th Path
+    %th
+    %th
+    %th
+
+  - @samples.each do |sample|
+    %tr
+      %td= sample.name
+      %td= sample.path
+      %td= link_to 'Show', sample
+      %td= link_to 'Edit', edit_sample_path(sample)
+      %td= link_to 'Destroy', sample, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Sample', new_sample_path

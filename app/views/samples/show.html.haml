@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @sample.name
+%p
+  %b Path:
+  = @sample.path
+
+= link_to 'Edit', edit_sample_path(@sample)
+\|
+= link_to 'Back', samples_path
