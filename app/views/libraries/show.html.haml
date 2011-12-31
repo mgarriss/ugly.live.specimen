@@ -1,12 +1,13 @@
 %p#notice= notice
 
-%p
-  %b Name:
-  = @library.name
-%p
-  %b Path:
-  = @library.path
+.library
+  %p
+    %b Name:
+    = @library.name
+  %p
+    %b Path:
+    = @library.path
 
-= link_to 'Edit', edit_library_path(@library)
-\|
-= link_to 'Back', libraries_path
+  = link_to 'Edit', edit_library_path(@library)
+  \|
+  = link_to 'Back', libraries_path
