@@ -1,6 +1,8 @@
+@import "vars";
+
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: $vine_charcoal;
+  color: $white;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
@@ -11,17 +13,17 @@ p, ol, ul, td {
   line-height: 18px; }
 
 pre {
-  background-color: #eee;
+  background-color: $vine_charcoal;
   padding: 10px;
   font-size: 11px; }
 
 a {
-  color: #000;
+  color: $white;
   &:visited {
-    color: #666; }
+    color: $ebonics_444; }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: $white;
+    background-color: $vine_charcoal; } }
 
 div {
   &.field, &.actions {
