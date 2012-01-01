@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= link_to image_tag('glass_jar.jpg') %>
   <%= link_to 'ugly.live.specimen', '/' %>
+  <div id='brand_image'>
+       <%= link_to image_tag('glass_jar.jpg'), '/' %>
+  </div>
   <%= yield %>
 </body>
 </html>
