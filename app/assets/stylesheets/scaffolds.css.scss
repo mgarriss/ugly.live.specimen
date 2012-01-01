@@ -23,14 +23,14 @@ a {
     color: $ebonics_444; }
   &:hover {
     color: $white;
-    background-color: $vine_charcoal; } }
+    background-color: $ebonics_444; } }
 
 div {
   &.field, &.actions {
     margin-bottom: 10px; } }
 
 #notice {
-  color: green; }
+  color: $naive_blue; }
 
 .field_with_errors {
   padding: 2px;
