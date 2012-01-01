@@ -2,12 +2,12 @@
 
 .library
   %p
-    %b Name:
+    %b name.
     = @library.name
   %p
-    %b Path:
+    %b path.
     = @library.path
 
-  = link_to 'Edit', edit_library_path(@library)
+  = link_to 'edit', edit_library_path(@library)
   \|
-  = link_to 'Back', libraries_path
+  = link_to 'back', libraries_path

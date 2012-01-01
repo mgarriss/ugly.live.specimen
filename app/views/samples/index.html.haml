@@ -1,21 +1,21 @@
-%h1 Listing samples
+%h1
+  audio samples
 
 %table
   %tr
-    %th Name
-    %th Path
+    %th name
+    %th path
     %th
     %th
     %th
 
   - @samples.each do |sample|
     %tr
-      %td= sample.name
+      %td= link_to sample.name, sample
       %td= sample.path
-      %td= link_to 'Show', sample
-      %td= link_to 'Edit', edit_sample_path(sample)
-      %td= link_to 'Destroy', sample, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'edit', edit_sample_path(sample)
+      %td= link_to 'forget', sample, :confirm => 'are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Sample', new_sample_path
+= link_to 'new sample', new_sample_path

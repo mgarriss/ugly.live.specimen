@@ -1,9 +1,9 @@
-%h1 Listing libraries
+%h1 libraries
 
 %table
   %tr
-    %th Name
-    %th Path
+    %th name
+    %th path
     %th
     %th
 
@@ -11,9 +11,9 @@
     %tr
       %td= link_to library.name, library
       %td= library.path
-      %td= link_to 'Edit', edit_library_path(library)
-      %td= link_to 'Destroy', library, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'edit', edit_library_path(library)
+      %td= link_to 'forget', library, :confirm => 'are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Library', new_library_path
+= link_to 'new library', new_library_path
