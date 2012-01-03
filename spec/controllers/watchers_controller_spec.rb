@@ -36,10 +36,8 @@ describe WatchersController do
   end
 
   describe "GET show" do
-    it "assigns the requested watcher as @watcher" do
-      watcher = Watcher.create! valid_attributes
-      get :show, :id => watcher.id
-      assigns(:watcher).should eq(watcher)
+    it "returns 404" do
+      pending
     end
   end
 
@@ -51,10 +49,8 @@ describe WatchersController do
   end
 
   describe "GET edit" do
-    it "assigns the requested watcher as @watcher" do
-      watcher = Watcher.create! valid_attributes
-      get :edit, :id => watcher.id
-      assigns(:watcher).should eq(watcher)
+    it "returns 404" do
+      pending
     end
   end
 
@@ -97,44 +93,14 @@ describe WatchersController do
 
   describe "PUT update" do
     describe "with valid params" do
-      it "updates the requested watcher" do
-        watcher = Watcher.create! valid_attributes
-        # Assuming there are no other watchers in the database, this
-        # specifies that the Watcher created on the previous line
-        # receives the :update_attributes message with whatever params are
-        # submitted in the request.
-        Watcher.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :id => watcher.id, :watcher => {'these' => 'params'}
-      end
-
-      it "assigns the requested watcher as @watcher" do
-        watcher = Watcher.create! valid_attributes
-        put :update, :id => watcher.id, :watcher => valid_attributes
-        assigns(:watcher).should eq(watcher)
-      end
-
-      it "redirects to the watcher" do
-        watcher = Watcher.create! valid_attributes
-        put :update, :id => watcher.id, :watcher => valid_attributes
-        response.should redirect_to(watcher)
+      it "doesn't update anything" do
+        pending
       end
     end
 
     describe "with invalid params" do
-      it "assigns the watcher as @watcher" do
-        watcher = Watcher.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Watcher.any_instance.stub(:save).and_return(false)
-        put :update, :id => watcher.id, :watcher => {}
-        assigns(:watcher).should eq(watcher)
-      end
-
-      it "re-renders the 'edit' template" do
-        watcher = Watcher.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Watcher.any_instance.stub(:save).and_return(false)
-        put :update, :id => watcher.id, :watcher => {}
-        response.should render_template("edit")
+      it "doesn't do anything" do
+        pending
       end
     end
   end

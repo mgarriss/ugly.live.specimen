@@ -1,19 +1,15 @@
-%h1 Listing watchers
+%h1 watchers
 
 %table
   %tr
-    %th Path
-    %th
     %th
     %th
 
   - @watchers.each do |watcher|
     %tr
-      %td= watcher.path
-      %td= link_to 'Show', watcher
-      %td= link_to 'Edit', edit_watcher_path(watcher)
-      %td= link_to 'Destroy', watcher, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to watcher.path, watcher
+      %td= link_to 'destroy', watcher, :confirm => 'are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Watcher', new_watcher_path
+= link_to 'new watcher', new_watcher_path
