@@ -1,4 +1,6 @@
 UglyLiveSpecimen::Application.routes.draw do
+  resources :watchers
+
   resources :samples
 
   # The priority is based upon order of creation:

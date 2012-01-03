@@ -6,4 +6,8 @@ FactoryGirl.define do
   factory :sample do
     path { FactoryGirl.generate(:path_to_nonexistant_file) } 
   end
+  
+  factory :watcher do
+    path { FactoryGirl.generate(:path_to_nonexistant_file) }
+  end
 end

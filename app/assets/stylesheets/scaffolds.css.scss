@@ -1,8 +1,6 @@
-@import "vars";
-
 body {
-  background-color: $vine_charcoal;
-  color: $white;
+  background-color: #fff;
+  color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
@@ -13,24 +11,24 @@ p, ol, ul, td {
   line-height: 18px; }
 
 pre {
-  background-color: $vine_charcoal;
+  background-color: #eee;
   padding: 10px;
   font-size: 11px; }
 
 a {
-  color: $white;
+  color: #000;
   &:visited {
-    color: $ebonics_444; }
+    color: #666; }
   &:hover {
-    color: $white;
-    background-color: $ebonics_444; } }
+    color: #fff;
+    background-color: #000; } }
 
 div {
   &.field, &.actions {
     margin-bottom: 10px; } }
 
 #notice {
-  color: $naive_blue; }
+  color: green; }
 
 .field_with_errors {
   padding: 2px;

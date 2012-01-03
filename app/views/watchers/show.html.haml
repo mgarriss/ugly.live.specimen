@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Path:
+  = @watcher.path
+
+= link_to 'Edit', edit_watcher_path(@watcher)
+\|
+= link_to 'Back', watchers_path
