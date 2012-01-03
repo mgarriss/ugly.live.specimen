@@ -21,36 +21,9 @@ class SamplesController < ApplicationController
     end
   end
 
-  # GET /samples/new
-  # GET /samples/new.json
-  def new
-    @sample = Sample.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @sample }
-    end
-  end
-
   # GET /samples/1/edit
   def edit
     @sample = Sample.find(params[:id])
-  end
-
-  # POST /samples
-  # POST /samples.json
-  def create
-    @sample = Sample.new(params[:sample])
-
-    respond_to do |format|
-      if @sample.save
-        format.html { redirect_to @sample, notice: 'Sample was successfully created.' }
-        format.json { render json: @sample, status: :created, location: @sample }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @sample.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   # PUT /samples/1

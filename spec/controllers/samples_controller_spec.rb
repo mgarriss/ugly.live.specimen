@@ -44,9 +44,8 @@ describe SamplesController do
   end
 
   describe "GET new" do
-    it "assigns a new sample as @sample" do
-      get :new
-      assigns(:sample).should be_a_new(Sample)
+    it "return 404" do
+      pending
     end
   end
 
@@ -60,37 +59,14 @@ describe SamplesController do
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new Sample" do
-        expect {
-          post :create, :sample => valid_attributes
-        }.to change(Sample, :count).by(1)
-      end
-
-      it "assigns a newly created sample as @sample" do
-        post :create, :sample => valid_attributes
-        assigns(:sample).should be_a(Sample)
-        assigns(:sample).should be_persisted
-      end
-
-      it "redirects to the created sample" do
-        post :create, :sample => valid_attributes
-        response.should redirect_to(Sample.last)
+      it "doesn't work" do
+        pending
       end
     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved sample as @sample" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Sample.any_instance.stub(:save).and_return(false)
-        post :create, :sample => {}
-        assigns(:sample).should be_a_new(Sample)
-      end
-
-      it "re-renders the 'new' template" do
-        # Trigger the behavior that occurs when invalid params are submitted
-        Sample.any_instance.stub(:save).and_return(false)
-        post :create, :sample => {}
-        response.should render_template("new")
+        pending
       end
     end
   end
