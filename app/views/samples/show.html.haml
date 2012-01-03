@@ -1,12 +1,13 @@
 %p#notice= notice
 
-%p
-  %b name.
-  = @sample.name
-%p
-  %b path.
-  = @sample.path
+.sample
+  %p
+    %b name.
+    = @sample.name
+  %p
+    %b path.
+    = @sample.path
 
-= link_to 'edit', edit_sample_path(@sample)
-\|
-= link_to 'back', samples_path
+  = link_to 'edit', edit_sample_path(@sample)
+  \|
+  = link_to 'back', samples_path

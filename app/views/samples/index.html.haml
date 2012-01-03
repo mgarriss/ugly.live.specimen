@@ -3,16 +3,13 @@
 
 %table
   %tr
-    %th name
-    %th path
-    %th
+    %th id
     %th
     %th
 
   - @samples.each do |sample|
-    %tr
-      %td= link_to sample.name, sample
-      %td= sample.path
+    %tr.sample_summary
+      %td= link_to sample.id, sample
       %td= link_to 'edit', edit_sample_path(sample)
       %td= link_to 'forget', sample, :confirm => 'are you sure?', :method => :delete
 
