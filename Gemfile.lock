@@ -171,6 +171,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  childprocess
   coffee-rails (~> 3.1.1)
   database_cleaner
   factory_girl_rails
