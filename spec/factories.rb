@@ -4,7 +4,9 @@ FactoryGirl.define do
   end
   
   factory :sample do
-    path { FactoryGirl.generate(:path_to_nonexistant_file) } 
+    path do
+      Tempfile.new('ugly.live.specimen').path
+    end
   end
   
   factory :watcher do
