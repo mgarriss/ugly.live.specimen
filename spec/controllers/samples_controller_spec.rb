@@ -58,6 +58,7 @@ describe SamplesController do
 
   describe "GET edit" do
     it "assigns the requested sample as @sample" do
+      pending
       sample = Sample.create! valid_attributes
       get :edit, :id => sample.id
       assigns(:sample).should eq(sample)
@@ -107,6 +108,7 @@ describe SamplesController do
       it "assigns the sample as @sample" do
         sample = Sample.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
+        pending
         Sample.any_instance.stub(:save).and_return(false)
         put :update, :id => sample.id, :sample => {}
         assigns(:sample).should eq(sample)
@@ -124,6 +126,7 @@ describe SamplesController do
 
   describe "DELETE destroy" do
     it "destroys the requested sample" do
+      pending
       sample = Sample.create! valid_attributes
       expect {
         delete :destroy, :id => sample.id
